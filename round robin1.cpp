@@ -108,39 +108,5 @@ int main()
     printf("*******Enter STUDENT BurstTime:********** \n\n");
     for(i=1;i<=y;i++)
     {
-       printf("Enter student burst time : %d\t",i);
-	scanf("%d",&burst_time[i]);
-	printf("\n");
-    }
-    
-     printf("********Enter Faculty ArrivalTime :******** \n\n");
-    for(i=1;i<=y;i++)
-    {
-        printf("Enter faculty arrival time : %d\t",i);
-	scanf("%d",&p1[i]);
-        printf("\n");
-    }
 
-    int n = sizeof p / sizeof p[0];
-
-    printf("********Enter FACULTY BurstTime :******** \n\n");
-    for(i=1;i<=y;i++)
-    {
-        printf("Enter faculty burst time : %d\t",i);
-	    scanf("%d",&burst_time1[i]);
-        printf("\n");
-    }
-
-    printf("sudesh sharma spends 1st one hour for handling student queries: \n\n");
-    AvgTime(p, n, burst_time, quantum,'s'); 
-    n = sizeof p1 / sizeof p1[0];
-    printf("\n\n");
-    
-    printf("sudesh sharma spends 2nd one hour for handling Faculty queries: \n\n");
-    AvgTime(p1, n ,burst_time1,quantum,'f');
-    printf("\n\n\n");
-    
-    printf("/n/nWe Used TIME QUANTUM = 5:\n\n");
-    return 0;
-}
     

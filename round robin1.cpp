@@ -22,7 +22,7 @@ void WaitingTime(int process[], int n,int burst[], int wt[], int quan)
                 if (rem[i]>quan)
                 {
                     t += quan;
-                   rem[i] -= quan;
+                    rem[i] -= quan;
                 }
                 else
                 {

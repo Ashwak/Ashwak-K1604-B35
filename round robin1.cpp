@@ -2,6 +2,8 @@
 #include<stdbool.h>
 void WaitingTime(int process[], int n,int burst[], int wt[], int quan)
 {
+	
+	
     int i,t,rem[n];
     t=0;
     for (i = 1 ; i <= n ; i++)
@@ -9,7 +11,7 @@ void WaitingTime(int process[], int n,int burst[], int wt[], int quan)
             rem[i] =  burst[i];
         }
     while(1)
-    {
+    {  
         bool flag= true;
         for(i = 1; i <= n; i++)
         {
